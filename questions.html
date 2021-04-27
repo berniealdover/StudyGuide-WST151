@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>BA</h1>
+      <nav>
+        <div tabindex="1" class="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div tabindex="1" class="invisibleBtn"></div>
+        <ul>
+        <li><a href="home.html"> Home </a></li>
+          <li><a href="network.html"> Network </a></li>
+          <li><a href="protocols.html"> Protocols </a></li>
+          <li><a href="internet.html"> Internet </a></li>
+          <li><a href="questions.html"> Questions </a></li>
+        </ul>
+      </nav>
+    </header>
+    <center><img style="width: 1300px; padding: 20px; min-height: 0%;"class="photo2" src="images/20.jpg"></center>
+      <section id="questions">
+        <h2>Questions</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>
+              What events and technologies helped the internet grow in the early
+              90s?
+            </h3>
+            <p>
+              A convergance of technologies. User friendly operating systems and
+              online service providers. Restrictions were lifted in 1991 and the
+              Internet grew.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What is the purpose of organizations like W3C and IETF?</h3>
+            <p>
+              The Internet Engineering Task Force (IETF) is the principal body
+              engaged in the development of new Internet protocol standard
+              specifications.The World Wide Web Consortium (W3C)Takes a
+              proactive role in developing recommendations and prototype
+              technologies related to the Web.
+            </p>
+          </div>
+          <div class="card">
+            <h3>
+              Why should you put extra effort into making websites more
+              accessible?
+            </h3>
+            <p>
+              It's the right thing to do and in some cases it's the law. It also
+              helps with SEO and ranking.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What are 3 ways to make websites more accessible?</h3>
+            <p>
+              Don't use images for anything that can be displayed with text.<br />Add
+              text descriptions for images.<br />Use descriptive links Provide
+              title attributes in links.<br />Provide a text navigation area at
+              the bottom of the page.<br />Use proper semantic html tags that
+              introduce meaning rather than only presentation.<br />Declare the
+              language.<br />Avoid dashes.<br />Avoid Abbreviation.<br />Avoid
+              slang words.<br />Keep sentences short.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What is intellectual property?</h3>
+            <p>
+              Intellectual property (IP) refers to creations of the mind, such
+              as inventions; literary and artistic works; designs; and symbols,
+              names and images used in commerce.
+            </p>
+          </div>
+          <div class="card">
+            <h3>
+              When is it ok to use images, audio, or video, created by someone
+              else?
+            </h3>
+            <p>
+              If they creator provided a creative commons license or if the work
+              is in the public domain.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      let cardNodes = document.querySelectorAll('.card');
+      for (let i = 0; i < cardNodes.length; i++) {
+        let pElement = document.createElement('p');
+        pElement.innerHTML = cardNodes[i].querySelector('p').innerHTML;
+        cardNodes[i].appendChild(pElement);
+      }
+    </script>
+  </body>
+</html>

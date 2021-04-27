@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>BA</h1>
+      <nav>
+        <div tabindex="1" class="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div tabindex="1" class="invisibleBtn"></div>
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+          <li><a href="network.html"> Network </a></li>
+          <li><a href="protocols.html"> Protocols </a></li>
+          <li><a href="internet.html"> Internet </a></li>
+          <li><a href="questions.html"> Questions </a></li>
+        </ul>
+      </nav>
+    </header>
+    <center><img style="width: 1300px; padding: 20px; min-height:0%;"class="photo2" src="images/23.jpg"></center>
+
+      <section id="network">
+        <h2>Network</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Network</h3>
+            <p>
+              A network consists of two or more computers connected for the
+              purpose of communicating and sharing resources.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Client</h3>
+            <p>
+              A client is a computer that connects to and uses the resources of
+              a remote computer, or server.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Server</h3>
+            <p>
+              A server is a software or hardware device that accepts and
+              responds to requests made over a network.
+            </p>
+          </div>
+          <div class="card">
+            <h3>LAN</h3>
+            <p>
+              A Local Area Network collection of devices connected together in
+              one physical location, such as a building, office, or home
+            </p>
+          </div>
+          <div class="card">
+            <h3>Packets</h3>
+            <p>
+              A packet is a small amount of data sent over a network, such as a
+              LAN or the Internet. Similar to a real-life package, each packet
+              includes a source and destination as well as the content (or data)
+              being transferred. When the packets reach their destination, they
+              are reassembled into a single file or other contiguous block of
+              data.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script>
+      let cardNodes = document.querySelectorAll('.card');
+      for (let i = 0; i < cardNodes.length; i++) {
+        let pElement = document.createElement('p');
+        pElement.innerHTML = cardNodes[i].querySelector('p').innerHTML;
+        cardNodes[i].appendChild(pElement);
+      }
+    </script>
+  </body>
+</html>
