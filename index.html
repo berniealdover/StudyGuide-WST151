@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>BA</h1>
+      <nav>
+        <div tabindex="1" class="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div tabindex="1" class="invisibleBtn"></div>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+          <li><a href="network.html"> Network </a></li>
+          <li><a href="protocols.html"> Protocols </a></li>
+          <li><a href="internet.html"> Internet </a></li>
+          <li><a href="questions.html"> Questions </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 2em; 
+                font-display: min-width;
+                color: rgb(9, 31, 59);
+                height: 30px;
+                padding: 30px;
+                background-size: 10px;"
+                > WST 151</h1>
+    <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 4em; 
+                font-display: min-width;
+                color: rgb(9, 31, 59);
+                background-size: 10px;"
+                > Study Guide</h1>
+
+                <center><img style="width: 1300px; padding: 5px;"class="photo2" src="images/2.png"></center>
+
+    <script>
+      let cardNodes = document.querySelectorAll('.card');
+      for (let i = 0; i < cardNodes.length; i++) {
+        let pElement = document.createElement('p');
+        pElement.innerHTML = cardNodes[i].querySelector('p').innerHTML;
+        cardNodes[i].appendChild(pElement);
+      }
+    </script>
+  </body>
+</html>
