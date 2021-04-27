@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>BA</h1>
+      <nav>
+        <div tabindex="1" class="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div tabindex="1" class="invisibleBtn"></div>
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+          <li><a href="network.html"> Network </a></li>
+          <li><a href="protocols.html"> Protocols </a></li>
+          <li><a href="internet.html"> Internet </a></li>
+          <li><a href="questions.html"> Questions </a></li>
+        </ul>
+      </nav>
+    </header>
+    <center><img style="width: 1300px; padding: 20px; min-height: 0%;" class="photo2" src="images/21.jpg"></center>
+      <section id="protocols">
+        <h2>Protocols</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Protocols</h3>
+            <p>
+              Protocols are rules that describe how clients and servers
+              communicate with each other over a network. There are many
+              different protocols with different purposes. These protocols are
+              implemented by operating systems, browsers, and networking
+              devices.
+            </p>
+          </div>
+          <div class="card">
+            <h3>IP</h3>
+            <p>
+              The Internet Protocol is a set of rules that dictate how data
+              should be delivered over the public network (Internet).
+            </p>
+          </div>
+          <div class="card">
+            <h3>TCP</h3>
+            <p>
+              Transmission Control Protocol divides traffic into packets for
+              efficient transport through the Internet
+            </p>
+          </div>
+          <div class="card">
+            <h3>TCP/IP</h3>
+            <p>
+              The official internet protocol suite. TCP, IP and the many other
+              protocols of TCP/IP have specific functions and work together to
+              ensure reliable network communication.
+            </p>
+          </div>
+          <div class="card">
+            <h3>FTP</h3>
+            <p>
+              The File Transfer Protocol is a set of rules for exchanging files
+              over the internet. Unlike HTTP which is used to ask for the entire
+              webpage and it's files to display them, FTP is used only to move a
+              file from one computer to another. FTP is commonly used by web
+              developers when they want to tranfer their local files from their
+              computer to the server and vice versa.
+            </p>
+          </div>
+          <div class="card">
+            <h3>HTTP</h3>
+            <p>
+              HTTP (Hypertext Transfer Protocol) is the set of rules for
+              transferring files -- such as text, images, sound, video and other
+              multimedia files -- over the web.
+            </p>
+          </div>
+          <div class="card">
+            <h3>IMAP</h3>
+            <p>
+              Internet Message Access Protocol: a way of accessing e-mail
+              messages which are held on an internet server, rather than on an
+              individual's computer.
+            </p>
+          </div>
+          <div class="card">
+            <h3>POP</h3>
+            <p>
+              Stands for "Post Office Protocol." POP3, sometimes referred to as
+              just "POP," is a simple, standardized method of delivering e-mail
+              messages. A POP3 mail server receives e-mails and filters them
+              into the appropriate user folders. When a user connects to the
+              mail server to retrieve his mail, the messages are downloaded from
+              mail server to the user's hard disk.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>SMTP</h3>
+            <p>
+              SMTP is used to send and receive email. It is sometimes paired
+              with IMAP or POP3 (for example, by a user-level application),
+              which handles the retrieval of messages, while SMTP primarily
+              sends messages to a server for forwarding. SMTP can both send and
+              receive mail, but it's bad at queuing incoming messages, hence the
+              common delegation to other protocols.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>IP Address</h3>
+            <p>
+              An IP address is a numeric ID given to each device connected to
+              the internet. Every network has a public IP address and every
+              device in the network has a private IP address. IP addresses
+              sometimes correspond to domain names. The Domain Name System
+              associates IP addresses with URLs with domain names.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>IPv4</h3>
+            <p>
+              Made of 4 8-bit numbers separated by periods. Total 32 bits Each
+              number can range between 0 and 255. XXX . XXX . XXX . XXX Total of
+              4,294,967,296 possible unique combinations. First standard or
+              public version of IP. In Use since early 1980s.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>IPv6</h3>
+            <p>
+              Made of 32 hexadecimal numbers grouped in 4s, separated by colons.
+              Each number can range between 0-9 and A-F. Total 128 bits XXXX :
+              XXXX : XXXX : XXXX : XXXX : XXXX : XXXX : XXXX
+              340,282,366,920,938,463,463,374,607,431,768,211,456 unique
+              combinations Development began in 1998 and became official
+              standard in 2017
+            </p>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+
+    <script>
+      let cardNodes = document.querySelectorAll('.card');
+      for (let i = 0; i < cardNodes.length; i++) {
+        let pElement = document.createElement('p');
+        pElement.innerHTML = cardNodes[i].querySelector('p').innerHTML;
+        cardNodes[i].appendChild(pElement);
+      }
+    </script>
+  </body>
+</html>
